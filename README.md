@@ -63,7 +63,7 @@
 
 ## 部署
 
-本项目**支持 Vercel、Docker 和 Cloudflare** 部署。
+本项目**支持 Vercel、Docker 和  Cloudflare** 部署。
 
 存储支持矩阵
 
