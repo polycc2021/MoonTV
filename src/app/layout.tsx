@@ -26,6 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: siteName,
     description: '影视聚合',
     manifest: '/manifest.json',
+    referrer: 'no-referrer',
   };
 }
 
@@ -69,6 +70,11 @@ export default async function RootLayout({
   return (
     <html lang='zh-CN' suppressHydrationWarning>
       <head>
+        <meta name='referrer' content='no-referrer' />
+        <meta
+          httpEquiv='Content-Security-Policy'
+          content='upgrade-insecure-requests'
+        />
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1.0, viewport-fit=cover'
